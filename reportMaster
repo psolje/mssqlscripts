@@ -1,0 +1,7 @@
+select 
+invS.SupplierName as supplier, 
+invM.ItemName as item, 
+invM.ListCost as price, 
+invM.ItemDesc as note 
+from INVENTORY..tbInvMaster as invM inner join INVENTORY..tbInvSupplier as invS 
+on invM.SupplierID = invS.SupplierID;
